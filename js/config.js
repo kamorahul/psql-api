@@ -80,7 +80,7 @@ module.exports = {
 			};
 			fs.writeFileSync('env.json',JSON.stringify(renv,null,2))
 		};
-		if(!checkpath('ipallow.json')){fs.writeFileSync('ipallow.json',"[]")};
+		if(!checkpath('ipallow.json')){fs.writeFileSync('ipallow.json',"['']")};
 		if(!checkpath('config.json')){
 			var rcfg = {
 				  "userapid": true,
@@ -88,10 +88,10 @@ module.exports = {
 				  "port": 5433,
 				  "user": "postgres",
 				  "password": "postgres",
-				  "rapiddb": "rcfg",
+				  "rapiddb": "postgres",
 				  "rapidid": "default",
-				  "suser": "admin",
-				  "spwd": "",
+				  "suser": "postgres",
+				  "spwd": "postgres",
 				  "isnew": true,
 			};	
 			fs.writeFileSync('config.json',JSON.stringify(rcfg,null,2))
