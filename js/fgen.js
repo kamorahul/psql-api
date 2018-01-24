@@ -144,6 +144,7 @@ return finalstr
 	return _year+'-'+_month+'-'+_day+' ' + _hour+':'+_minute+":"+_second;
  },
  checkadmpwd: function(req,adm,pwd){
+  	console.log(req.headers.authorization,adm,pwd)
  		if (!req.headers.authorization){return {message:"NOK",error:"Authorization header is required"}};
  		var authstring = req.headers.authorization
                 authstring = utils.base64(authstring.substring(6,authstring.length),'d');
