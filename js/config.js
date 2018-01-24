@@ -80,7 +80,7 @@ module.exports = {
 			};
 			fs.writeFileSync('env.json',JSON.stringify(renv,null,2))
 		};
-		if(!checkpath('ipallow.json')){fs.writeFileSync('ipallow.json',"['']")};
+		if(!checkpath('ipallow.json')){fs.writeFileSync('ipallow.json',"[]")};
 		if(!checkpath('config.json')){
 			var rcfg = {
 				  "userapid": true,
