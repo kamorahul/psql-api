@@ -84,10 +84,10 @@ module.exports = {
 		if(!checkpath('config.json')){
 			var rcfg = {
 				  "userapid": true,
-				  "host": "localhost",
+				  "host": "﻿35.229.97.211",
 				  "port": 5433,
 				  "user": "postgres",
-				  "password": "***",
+				  "password": "postgres",
 				  "rapiddb": "rcfg",
 				  "rapidid": "default",
 				  "suser": "admin",
